@@ -1,0 +1,32 @@
+<h2>Pacientes</h2>
+<hr>
+
+<form action="" class="form-inline">
+  <div class="form-group mb-2">
+    <input type="text" class="form-control mr-2" placeholder="buscar">
+   <button class="btn btn-outline-success">Buscar</button>
+  </div>
+</form>
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr >
+      <th>Recno</th>
+      <th>Codigo Paciente</th>
+      <th>Nome</th>
+      <th>Nascimento</th>
+      <th>Sexo</th>
+    </tr>
+
+  </thead>
+  <tbody>
+    <tr *ngFor="let paciente of pacientes">
+      <td>{{paciente.recnoPaciente}}</td>
+      <td>{{paciente.codPaciente}}</td>
+      <td>{{paciente.nomePaciente}}</td>
+      <!-- <td>{{paciente.dtNascimento | date : 'dd MMM yyyy'}}</td> -->
+      <td>{{paciente.dtNascimento}}</td>
+      <td>{{paciente.sexoPaciente}}</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

@@ -16,5 +16,12 @@ namespace ProEventos.API.Data
 
         
         public DbSet<Evento> Eventos { get; set; }
+
+        public DbSet<Paciente> Pacientes { get; set; }
+
+        // protected override void OnModelCreating(ModelBuilder modelBuilder)
+        // {        modelBuilder.Entity<Paciente>()
+        // .HasNoKey();
+        // }
     }
 }
